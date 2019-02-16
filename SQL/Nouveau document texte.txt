@@ -1,0 +1,12 @@
+<?php
+    if (isset($_POST['id']) == "crepo" AND $_POST['mdp'] ==  "nutella") 
+    {
+        session_start();
+        $_SESSION ['login'] =$_POST['id'];
+        header('Location: vue.php');
+    }
+    else
+    {
+        header('Location: index.php');
+    }
+    ?>
